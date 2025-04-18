@@ -1,0 +1,42 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode",
+      "content": "A simple way to create a REST API with JSON.",
+      "tags": ["API", "JSON", "Server"],
+      "date": "2023-10-01"
+    },
+    {
+      "id": 2,
+      "title": "learning-json",
+      "author": "alura",
+      "content": "Understanding the basics of JSON format.",
+      "tags": ["JSON", "Learning"],
+      "date": "2023-10-02"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1,
+      "author": "user1",
+      "date": "2023-10-01"
+    },
+    {
+      "id": 2,
+      "body": "another comment",
+      "postId": 2,
+      "author": "user2",
+      "date": "2023-10-02"
+    }
+  ],
+  "profile": {
+    "name": "typicode",
+    "bio": "Developer and creator of json-server.",
+    "location": "San Francisco, CA",
+    "website": "https://github.com/typicode"
+  }
+}
