@@ -1,0 +1,189 @@
+/* Variáveis CSS */
+:root {
+  --bg-color: #121212;
+  --bg-icon: rgba(0, 0, 0, 0.7);
+  --text-base-light: #fff;
+  --text-base-dark: #000;
+  --text-sub: #ccc;
+  --border-radius: 0.5rem; /* 8px para rem */
+  --padding-small: 0.625rem; /* 10px para rem */
+  --padding-medium: 1rem; /* 16px para rem */
+  --padding-large: 1.25rem; /* 20px para rem */
+  --margin-small: 0.5rem; /* 8px para rem */
+  --margin-medium: 1rem; /* 16px para rem */
+  --margin-large: 1.25rem; /* 20px para rem */
+  --font-size-small: 1rem; /* 16px para rem */
+  --font-size-medium: 1.5rem; /* 24px para rem */
+  --font-size-large: 2rem; /* 32px para rem */
+}
+
+/* HEADER */
+.main-container {
+  max-width: 80rem;
+  height: 100rem;
+  margin-left: 20rem; /* 320px para rem */
+  margin-right: 3.5rem; /* 56px para rem */
+}
+
+.header__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--padding-small);
+  margin: var(--margin-large);
+  border-radius: var(--border-radius);
+  background-color: var(--bg-color);
+}
+
+.header__navigation .navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header__navigation .navigation .arrow-left {
+  margin-right: 0.9375rem; /* 15px para rem */
+}
+
+.arrow-left,
+.arrow-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  background: var(--bg-icon);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.header__login {
+  display: flex;
+  align-items: center;
+}
+
+.header__search {
+  display: flex;
+  align-items: center;
+  width: 22.75rem; /* 364px para rem */
+  height: 3rem; /* 48px para rem */
+  margin-left: var(--margin-small);
+  background-color: #242424;
+  border-radius: 31.25rem; /* 500px para rem */
+  border: 0.0625rem solid transparent; /* 1px para rem */
+}
+
+.header__search img {
+  width: var(--font-size-small);
+  height: var(--font-size-small);
+  margin-left: var(--padding-large);
+}
+
+.header__search input {
+  background: transparent;
+  border: none;
+  padding: 0 6.25rem 0 var(--padding-medium);
+  color: var(--text-base-light);
+  text-overflow: ellipsis;
+  outline: none;
+}
+
+.header__login .subscribe {
+  color: var(--text-sub);
+  font-size: var(--font-size-small);
+  font-weight: 700;
+  background-color: transparent;
+  margin-right: 2rem; /* 32px para rem */
+}
+
+.header__login .login {
+  width: 6.25rem; /* 100px para rem */
+  height: 3rem; /* 48px para rem */
+  color: var(--text-base-dark);
+  font-size: var(--font-size-small);
+  font-weight: 700;
+  border-radius: 2.5rem; /* 40px para rem */
+}
+
+/* HOVER */
+.header__search:hover {
+  border: 0.0625rem solid var(--text-base-light); /* 1px para rem */
+}
+
+.header__login .subscribe:hover,
+.header__login .login:hover {
+  transform: scale(1.04);
+}
+
+/* PLAYLIST */
+.playlist-container {
+  height: 72vh;
+  padding-top: var(--padding-medium);
+  margin: var(--margin-large);
+  border-radius: 0.625rem; /* 10px para rem */
+  background-color: var(--bg-color);
+}
+
+.playlist {
+  margin: 3rem; /* 24px para rem */
+}
+
+.playlist #greeting {
+  color: var(--text-base-light);
+  font-size: var(--font-size-large);
+  font-weight: 700;
+  margin-bottom: 3rem; /* 48px para rem */
+}
+
+.playlist .session {
+  color: var(--text-base-light);
+  font-size: var(--font-size-medium);
+  font-weight: 700;
+}
+
+/* SCROLL */
+.offer__scroll-container {
+  max-height: 52vh;
+  margin: 3rem; /* 24px para rem */
+  overflow-y: auto;
+}
+
+.offer__scroll-container::-webkit-scrollbar {
+  width: 0.0625rem; /* 1px para rem */
+}
+
+/* Thumb */
+.offer__scroll-container::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+/* OFFER LIST ITEM */
+.offer__list-item {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--padding-medium);
+  margin-bottom: var(--padding-medium);
+}
+
+.cards {
+  position: relative;
+  width: 13.75rem; /* 220px para rem */
+  height: 12.5rem; /* 200px para rem */
+  overflow: hidden;
+  border-radius: var(--border-radius);
+}
+
+.cards span {
+  padding: var(--padding-medium);
+  position: absolute;
+  color: var(--text-base-light);
+  font-size: var(--font-size-medium);
+  font-weight: 700;
+}
+
+/* COLOR CARDS */
+.card1 {
+  background-color: rgb(0, 100, 80);
+}
